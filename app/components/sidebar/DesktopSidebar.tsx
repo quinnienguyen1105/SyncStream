@@ -11,7 +11,7 @@ import {User} from '@prisma/client';
 interface DesktopSidebarProps {
   currentUser: User
 }
-const DesktopSidebar: React.FC<DesktopSidebarProps> = (currentUser) => {
+const DesktopSidebar: React.FC<DesktopSidebarProps> = ({currentUser}) => {
   const routes = useRoutes();
   const [isOpen, setIsOpen] = useState(false);
 
